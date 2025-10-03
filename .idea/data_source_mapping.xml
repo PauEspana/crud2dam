@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
+    <file url="mock:///TeacherDAOImpl.java" value="15ccb966-7b46-4c46-a0dd-d14b491482c0" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/15ccb966-7b46-4c46-a0dd-d14b491482c0/console.sql" value="15ccb966-7b46-4c46-a0dd-d14b491482c0" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/15ccb966-7b46-4c46-a0dd-d14b491482c0/console_1.sql" value="15ccb966-7b46-4c46-a0dd-d14b491482c0" />
+    <file url="file://$PROJECT_DIR$/src/main/java/me/pauep/crud2dam/database/CRUD.sql" value="15ccb966-7b46-4c46-a0dd-d14b491482c0" />
   </component>
 </project>

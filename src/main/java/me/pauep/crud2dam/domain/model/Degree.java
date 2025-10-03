@@ -1,5 +1,4 @@
-package me.pauep.crud2dam.model;
-
+package me.pauep.crud2dam.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,8 +9,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Teacher {
+public class Degree {
     private int id;
     private String name;
-    private String surname;
+    private int teacherId;
 }

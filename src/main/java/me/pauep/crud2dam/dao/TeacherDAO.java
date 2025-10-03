@@ -1,6 +1,6 @@
 package me.pauep.crud2dam.dao;
 
-import me.pauep.crud2dam.model.Teacher;
+import me.pauep.crud2dam.domain.model.Teacher;
 
 import java.util.List;
 

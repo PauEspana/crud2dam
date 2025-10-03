@@ -1,6 +1,6 @@
 package me.pauep.crud2dam.dao;
 
-import me.pauep.crud2dam.model.Degree;
+import me.pauep.crud2dam.domain.model.Degree;
 
 import java.util.List;
 
