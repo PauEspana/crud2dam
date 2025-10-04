@@ -1,16 +1,19 @@
 package me.pauep.crud2dam.domain.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@ToString
 @NoArgsConstructor
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class Degree {
     private int id;
+    
+    @NonNull
     private String name;
+    
+    @NonNull
     private int teacherId;
 }

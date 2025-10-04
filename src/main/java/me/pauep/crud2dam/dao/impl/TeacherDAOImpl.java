@@ -1,6 +1,7 @@
 package me.pauep.crud2dam.dao.impl;
 
 import me.pauep.crud2dam.dao.TeacherDAO;
+import me.pauep.crud2dam.domain.model.Degree;
 import me.pauep.crud2dam.domain.model.Teacher;
 import me.pauep.crud2dam.util.DatabaseManager;
 
@@ -61,7 +62,7 @@ public class TeacherDAOImpl implements TeacherDAO {
     }
 
     @Override
-    public Teacher deleteTeacher(int id) {
+    public Teacher deleteTeacherById(int id) {
         final String sql = "DELETE FROM teacher WHERE teacher_id = ?";
 
         try (Connection connection = DatabaseManager.getDatabaseConnection()) {
@@ -92,10 +93,7 @@ public class TeacherDAOImpl implements TeacherDAO {
                 try (ResultSet resultSet = statement.executeQuery()) {
 
                     while (resultSet.next()) {
-                        Teacher t = new Teacher();
-                        t.setId(resultSet.getInt("teacher_id"));
-                        t.setName(resultSet.getString("teacher_name"));
-                        t.setSurname(resultSet.getString("teacher_surname"));
+                        Teacher t = getTeacherById(resultSet.getInt("teacher_id"));
                         result.add(t);
                     }
                 }
