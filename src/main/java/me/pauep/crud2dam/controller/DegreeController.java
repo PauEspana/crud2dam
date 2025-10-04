@@ -13,6 +13,7 @@ public class DegreeController {
     public void run() {
         int option = 99;
         while (option != 0) {
+            option = 99;
             option = view.menu();
 
             switch (option) {
@@ -22,8 +23,6 @@ public class DegreeController {
                 case 4 -> getDegreeById();
                 case 5 -> getAllDegrees();
             }
-            
-            option = 99;
         }
     }
 
